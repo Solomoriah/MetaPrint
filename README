@@ -1,0 +1,18 @@
+MetaPrint.py -- Metafile Printing Subsystem
+Copyright (c) 2008-2017 Chris Gonnerman
+All Rights Reserved
+See the LICENSE file for more information.
+
+------------------------------------------------------------------------------
+
+MetaPrint.py defines a class and utility functions for use by programs 
+which also use MSWinPrint.py for output.  MetaPrint exposes a document
+class which replicates the functionality of MSWinPrint, but rather than
+actually printing, a document object collects the output generated so
+that it can be replayed, either via MSWinPrint or ImagePrint.  This is
+useful mainly to preview a print job (by running the MetaPrint document
+through ImagePrint) and subsequently actually print it (via MSWinPrint).
+
+document is a class for creating and running print jobs.  Presently, the 
+source is the only documentation for this class.
+
